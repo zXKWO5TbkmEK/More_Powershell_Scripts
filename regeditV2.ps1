@@ -1,4 +1,4 @@
-$LogFile = "C:\_PersonalStuff\MyScript.log"
+$LogFile = "C:\regeditlog.txt"
 
 # Function to write log messages to the log file
 function Write-Log {
