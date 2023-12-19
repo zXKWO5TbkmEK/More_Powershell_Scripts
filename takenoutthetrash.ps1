@@ -11,5 +11,5 @@ Get-ChildItem -Path "C:\Windows\Temp" *.* -Recurse | Remove-Item -Force -Recurse
 #Backup Appdata locally and purge Appdata for current signed in user
 echo This will take some time
 $env:Source="C:\Users\$env:username\AppData\" 
-Robocopy $env:Source C:\123 /s /b
+Robocopy $env:Source C:\appdatabackup /s /b
 $env:Source="C:\Users\$env:username\AppData\" | Remove-Item -Force -Recurse
