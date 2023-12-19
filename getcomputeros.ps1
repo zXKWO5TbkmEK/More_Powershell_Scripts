@@ -1,4 +1,4 @@
-Get-Content "SET PATH HERE"  | ForEach-Object{
+Get-Content "SET INPUT PATH HERE"  | ForEach-Object{
 $os_name=$null
 $os_version=$null
 $errorMsg=''
@@ -22,4 +22,4 @@ ComputerName = $_
 OSName = $os_name
 OSVersion = $os_version 
 }} | Select ComputerName,OSName,OSVersion |
-Export-Csv "C:\users\$env:username\OneDrive - Orchid Orthopedic Solutions\Desktop\\OS_Details.csv" -NoTypeInformation -Encoding UTF8
+Export-Csv "SET OUTPUT PATH HERE" -NoTypeInformation -Encoding UTF8
