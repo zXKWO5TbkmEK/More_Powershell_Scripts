@@ -1,4 +1,4 @@
-Get-Content "C:\users\$env:username\OneDrive - Orchid Orthopedic Solutions\Desktop\computers.txt"  | ForEach-Object{
+Get-Content "SET PATH HERE"  | ForEach-Object{
 $os_name=$null
 $os_version=$null
 $errorMsg=''
