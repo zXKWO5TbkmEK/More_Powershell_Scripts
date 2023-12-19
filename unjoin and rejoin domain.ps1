@@ -1,7 +1,7 @@
 $computer = Get-WmiObject Win32_ComputerSystem
 
-$computer.UnjoinDomainOrWorkGroup("kiYHVVvqMb7", "marshall.cook@orchid-ortho.com", 0)
+$computer.UnjoinDomainOrWorkGroup("PASSWORD", "USERNAME", 0)
 
-$computer.JoinDomainOrWorkGroup("orchid.lan", "kiYHVVvqMb7", "marshall.cook@orchid-ortho.com", $null, 3)
+$computer.JoinDomainOrWorkGroup("DOMAIN", "PASSWORD", "USERNAME", $null, 3)
 
 Restart-Computer -Force
